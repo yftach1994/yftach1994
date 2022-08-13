@@ -43,7 +43,7 @@ public class main {
                         System.out.println(p2 + "'s Turn (o):");
                     }
 
-                    //Create a char variable that stores either 'x' or 'o' based on what player's turn it is
+                   
                     char c = '-';
                     if(player1turn) {
                         c = 'x';
@@ -89,12 +89,12 @@ public class main {
                         gameEnded = true;
                     } else {
 
-                        //If neither player has won, check to see if there has been a tie (if the board is full)
+                      
                         if(fullBoard(board)) {
                             System.out.println("It's a tie!");
                             gameEnded = true;
                         } else {
-                            //If player1 is true, make it false, and vice versa; this way, the players alternate each turn
+                           
                             player1turn = !player1turn;
                         }
 
